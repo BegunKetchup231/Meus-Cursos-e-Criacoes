@@ -1,0 +1,19 @@
+import sys
+
+COR_VERMELHA = '\033[91m'
+COR_VERDE = '\033[92m'
+COR_AMARELA = '\033[93m'
+COR_AZUL = '\033[94m'
+COR_MAGENTA = '\033[95m'
+COR_CIANO = '\033[96m'
+COR_BRANCA = '\033[97m'
+
+ESTILO_NEGRITO = '\033[1m'
+ESTILO_SUBLINHADO = '\033[4m'
+ESTILO_INVERTIDO = '\033[7m'
+
+RESETAR = '\033[0m'
+
+print(COR_VERMELHA + 'Texto vermelho' + RESETAR)
+print(ESTILO_NEGRITO + 'Texto em negrito' + RESETAR)
+print(COR_AZUL + ESTILO_SUBLINHADO + 'Texto azul com sublinhado' + RESETAR)
