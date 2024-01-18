@@ -8,6 +8,7 @@ ordens = []
 numeros = []
 
 
+
 if quant >= 1 and quant <= 10:
     for quantidade in range(quant):
         

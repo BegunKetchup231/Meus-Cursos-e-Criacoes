@@ -68,8 +68,8 @@ def click(val):
         pass
 root = tkinter.Tk()
 root.title("Calculadora Científica")
-root.geometry("680x486+100+100")
-root.config(bg="black")
+root.geometry("639x487+100+100")
+root.config(bg="#ba55d3")
 
 entry = tkinter.Entry(root, font=("arial", 20, "bold"),
          bg="black", fg="white", bd=10, width=30)
@@ -89,7 +89,7 @@ c = 0
 for i in button_list:
     #Botões
     button = tkinter.Button(root, width=5, height=2, bd=2, text=i,
-                        bg="black", fg="white", font=("arial", 18, "bold"),
+                        bg="black", fg="white", font=("JetBrains Mono", 18, "bold"),
                         command=lambda button=i: click(button))
     button.grid(row=r, column=c, pady=1)
     c += 1
