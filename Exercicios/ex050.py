@@ -1,21 +1,13 @@
 # Desenvolva um programa que leia seis números inteiros e mostre a soma apenas 
 # daqueles que forem pares. Se o valor digitado for impar, desconsidere-o.
 
+color = "033[93m"
+resetcolor = "033[0m"
+soma = 0
 
-somapr = 0
-somaim = 0
-
-for numero in range(1, 7) :
-
-    numero = int(input("Digite um valor: "))
-
-    if numero % 2 == 0 :
-
-        somapr += numero
-    
-    else :
-
-        somaim += numero
-
-print(f"A soma de todos os números pares é de: {somapr}")
-print(f"A soma de todos os números ímpares é de: {somaim} ")
+for numeros in range(1, 7):
+    numeros = int(input("Digite um número: "))
+    if numeros % 2 == 0:
+        soma += numeros
+        str(soma)
+print(f"A soma de todos os números pares é de: {soma}")
