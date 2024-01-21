@@ -32,7 +32,7 @@
 #   \033[0m
 
 #       Exemplo
-print('\033[1;33;44mOlá mundo\033[0m')
+print('\033[1;33;44mOlá mundo')
 
 
 print('{}Olá, Mundo{}'.format('\033[1;33;44m', '\033[0m'))
