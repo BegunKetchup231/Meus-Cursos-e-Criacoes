@@ -3,10 +3,14 @@
 # uma pausa de 1 segundo entre eles.
 
 from time import sleep
-#sleep(1)
 
-print(f"*Contagem de fogos*")
-for contagem in range(10, -1, -1) :
-    print(contagem)
+Estilo = "\033[1m"
+Cor = "\033[91m"
+Cor2 = "\033[93m"
+
+print(Estilo + Cor2 + "Contagem para os fogos...")
+
+for contagem in range(10, -1, -1):
     sleep(1)
-print("Cabummmmmm BUMM, BUMM!!")
+    print(contagem)
+print(Estilo + Cor + "Kabum, Kabum... Feliz Ano Novo!!!")
