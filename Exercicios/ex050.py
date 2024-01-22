@@ -6,7 +6,7 @@ cor_reset = "\033[0m"
 soma = 0
 
 for numeros in range(1, 7):
-    numeros = int(input("Digite um número: "))
+    numeros = int(input(f"Digite o {numeros}° número: "))
     if numeros % 2 == 0:
         soma += numeros
         
