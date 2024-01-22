@@ -1,27 +1,15 @@
 # Desenvolva um programa que leia um número inteiro e diga se ele é ou não um número primo
 
-# Pede ao usuário um número inteiro
-num = int(input("Digite um número Inteiro: "))
+numero = int(input("Digite um número inteiro: "))
 
-# Define que o total de divisões do num ainda é 0
-total = 0 
+quantidade = 0
+for loop in range(1, numero + 1):
+    if numero % loop == 0:
+        quantidade += 1
 
-for c in range(1, num + 1):
-
-    if num % c == 0:
-        print('\033[33m', end=' ')
-        total += 1
-        
-    else:
-        print('\033[31m', end=' ')
-    print(f'{c} ', end=' ')
-        
-print(f'\n\033[mO número {num} foi divisível {total} vezes')
-    
-# Se o total de divisões do num for 2, divisível por 1 e ele mesmo, ele é definido como primo
-if total == 2: 
-    print(f'O número {num} é um número Primo!')
-
+if quantidade > 2:
+    print(f"\033[91mO número {numero} não é primo!\033[0m")
 else:
-    print(f'O número {num} não é um número Primo!')
-    
+    print(f"\033[92mO número {numero} é Primo!\033[0m")
+
+print(f"\033[95mO número {numero} tem um total de {quantidade} divisores\033[0m")
