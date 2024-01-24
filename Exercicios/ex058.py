@@ -8,8 +8,10 @@ print(f"\033[1;93mEu irei pensar em um número de 1 a 10... Tente adivinhar...\0
 
 numero = int(input("Digite: "))
 
+cont = 1
 while numero != pensamento:
     print("Você errou... Tente novamente! ")
+    cont += 1
     numero = int(input("Digite: "))
 
-print(f"Eu pensei no número {pensamento} e você no {numero}, você acertou, genial!!")
+print(f"Eu pensei no número {pensamento} e você no {numero}, você acertou e precisou de {cont} tentativas!!")
