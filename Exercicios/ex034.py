@@ -10,3 +10,4 @@ if sala >= 1250.00:
     print(f'O seu novo salário é de R${superior:.2f}')
 else:
     print(f'O seu novo salário é de R${inferior:.2f}')
+    
